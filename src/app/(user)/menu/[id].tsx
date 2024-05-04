@@ -85,6 +85,7 @@ const styles = StyleSheet.create({
   image: {
     width: "80%",
     aspectRatio: 1,
+    alignSelf: "center",
   },
   price: {
     fontWeight: "bold",
