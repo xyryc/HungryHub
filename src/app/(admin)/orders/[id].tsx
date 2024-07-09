@@ -21,9 +21,11 @@ export default function OrderDetailsScreen() {
   if (isLoading) {
     return <ActivityIndicator />;
   }
-  if (error) {
+  if (error || !order) {
     return <Text>Failed to fetch</Text>;
   }
+
+  // console.log(order);
 
   return (
     <View style={{ padding: 10, gap: 20, flex: 1 }}>
